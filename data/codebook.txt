@@ -1,0 +1,4521 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                  Canadian Internet Use Survey, 2012 - Person File
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             Original label pumfid_p                             1
+      pumfid_p           Public use microdata file identification number     1
+      province           Province of respondent                              1
+      region             Regions of Canada                                   2
+      g_urbrur           Characteristic of community where the respondent    2
+      g_ceduc            Respondent's highest education level                3
+      g_cstud            Respondent is a student?                            3
+      g_clfsst           Detailed labour force status                        4
+      gfamtype           Type of household                                   4
+      g_hhsize           Number of persons in household                      5
+      g_heduc            Highest level of education ever completed in the    5
+      g_hstud            Student in household?                               6
+      g_hquint           Household income quintile                           6
+      gcagegr6           Age of respondent (6 groups)                        7
+      csex               Sex of respondent                                   7
+      cu_q01             Did you use Internet during past 12 months for p    8
+      cu_q02             How many years have you used the Internet?          9
+      cu_q03             How often do you use Internet for personal use i   10
+      cu_q04             Weekly average hrs you spend on Internet for per   11
+      cu_q05             Past 12 mnths, use Internet for personal use: ..   12
+      cu_q06             Past 12 months, use Internet for personal use: .   13
+      cu_g07             Past 12 mths use Internet - personal ...student    13
+      cu_q08             Past 12 mths use Internet - personal use ... pub   14
+      cu_q09             Past 12 mths use Internet - personal ... BlackBe   15
+      cu_q10             Use Internet - from what other locations? friend   16
+      cu_q11a            From what other locations? relative's home         17
+      cu_q11b            What other locations? - Friend's or neighbour ho   17
+      cu_q11c            From what other locations? - Government office,    18
+      cu_q11d            From what other locations? Wifi hotspot, Interne   19
+      cu_q11f            From what other locations? During travel hotel,    20
+      cu_11g             Other locations - you use the Internet ? Other     20
+      cu_q12a            Reasons you do not use the Internet? - Cost        21
+      cu_q12b            Reasons you do not use the Internet? - Limited a   22
+      cu_q12c            Reasons  - No need / no interest / not useful /    23
+      cu_q12d            Reasons Lack of skills /training /Internet or co   24
+      cu_q12h            Reasons- Age /Seniors                              25
+      cu_12g             Reasons you do not use the Internet? Other         25
+      ec_q01             Past 12 mths, did you order any goods or service   26
+      ec_q02a            Did you order? - Software                          26
+      ec_q02b            Did you order? - Music                             27
+      ec_q02c            Did you order? - Books, magazines, online newspa   27
+      ec_q02d            Did you order? - Videos or DVDs                    28
+      ec_q02e            Did you order? - Memberships or registration fee   28
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page ii
+
+
+      item                                                                page
+
+      ec_q02f            Did you order? - Gift certificates or gift cards   29
+      ec_q02g            Did you order? - Tickets for entertainment event   29
+      ec_q02h            Did you order? - None of the above                 30
+      ec_q03             Were any products delivered directly to your com   30
+      ec_q04a            Did you order:  computer hardware?                 31
+      ec_q04b            Did you order: - food or beverages?                31
+      ec_q04c            Did you order: - prescription drugs or products?   32
+      ec_q04d            Did you order: - other health or beauty products   32
+      ec_q04e            Did you order: - ... clothing, jewellery or acce   33
+      ec_q04f            Did you order: - ... house wares?                  33
+      ec_q04g            Did you order: - consumer electronics?             34
+      ec_q04h            Did you order: - ... travel arrangements?          34
+      ec_q04i            Did you order: - ... sports equipment?             35
+      ec_q04j            Did you order: - ... toys and games?               35
+      ec_q04k            Did you order: -  home improvement or gardening    36
+      ec_q04l            Did you order: - ... photographic services?        36
+      ec_q04m            Did  you order: automotive products?               37
+      ec_q04n            Did you order: flowers?                            37
+      ec_q04o            Did you order: - other goods or services? - Spec   38
+      ec_q04p            Did you order: - No other goods or services?       38
+      ec_q05a            Order goods and services from:  vendors in Canad   39
+      ec_q05b            Order goods and services from: vendors in the Un   39
+      ec_q05c            Order goods and services from: vendors in other    40
+      ec_q06             How many separate orders did you place over the    40
+      ec_q08             Past 12 mths esti cost Cdn$ good/service ordered   41
+      ec_q10a            Did you pay with  - A credit card online           41
+      ec_q10b            Did you pay with : Debit card                      42
+      ec_q10c            Did you pay with - Online payment service          42
+      ec_q10d            Did you pay with - Prepaid gift card or online v   43
+      ec_q10e            Did you pay with - Points from rewards programs    43
+      ec_q10f            Payment not made on the Internet                   44
+      ec_q11             Main reason not order good/service online - last   45
+      ha_q01             Does your household have access to the Internet    45
+      ha_q02a            Reasons household no access to Internet at home?   46
+      ha_q02b            Reasons household not access to Internet at home   46
+      ha_q02c            Reason household no access to Internet at home?.   47
+      ha_q02d            Reason household no access to Internet at home?.   47
+      ha_q02g            Reason household no access to Internet-home?...L   48
+      ha_q02h            Reason household no access to Internet-home? No    48
+      ha_02g             Reason household no access to Internet at home?.   49
+      ha_q03a            Access the Internet at home - desktop computer     49
+      ha_q03b            Access the Internet at home - laptop computer      50
+      ha_q03c            Access Internet at home - video games console      50
+      ha_q03d            Access Internet at home - a Blackberry or iPhone   51
+      ha_q03e            Access Internet at home - other device             51
+      ha_q04a            Connected to the Internet at home -telephone lin   52
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                Page iii
+
+
+      item                                                                page
+
+      ha_q04b            Connected to the Internet at home  -  cable line   52
+      ha_q04c            Connected to the Internet at home -  satellite d   53
+      ha_q04d            Connected to the Internet at home - a wireless d   53
+      ha_q04e            Connected to the Internet at home  - other conne   54
+      ha_q05a            Wireless connection -  Blackberry, iPhone          54
+      ha_q05b            Wireless connection - wireless stick/card          55
+      ha_q05c            Wireless connection - wireless/ Point-to-Point     55
+      ha_q05d            Wireless connection - other wireless connection    56
+      ha_q06             Household access Internet home using high speed    56
+      ha_q09             Is there high speed Internet service available i   57
+      su_q01             For e-mail?                                        57
+      su_q02             An instant messenger?                              58
+      su_q03             To visit or interact with government websites?     58
+      su_q04             To search for medica/ health-related information   59
+      su_q05             For formal education, training or school work?     59
+      su_q06             For travel information or making travel arrangem   60
+      su_q07             To search for employment?                          60
+      su_q08             For electronic banking?                            61
+      su_q09             To research investments?                           61
+      su_q10             To read or watch the news?                         62
+      su_q11             To research community events?                      62
+      su_q12             Window shop - browse for information on goods or   63
+      su_q13             To sell goods or services? - through auction sit   63
+      su_q14             Use social networking sites? - Facebook, Twitter   64
+      su_q15             To contribute content or participate in discussi   64
+      su_q16             To play online gamies?                             65
+      su_q17             To obtain or save music - free or paid dowloads?   65
+      su_q18             To obtain or save software - free or paid downlo   66
+      su_q19             To listen to the radio online?                     66
+      su_q20             To download or watch TV online?                    67
+      su_q21             To download or watch movies or video clips onlin   67
+      su_q22             To make telephone or video calls online?- Skype,   68
+      ps_q01             Concerned - conducting banking transactions over   68
+      ps_q02             Concerned - using credit card over the Internet    69
+      ps_q03             Security sftwre -protect computer/devices - acce   69
+      ps_q04             Currently use free versions of Internet security   70
+      ps_q05             How often back up files (document, spreadsheets/   70
+      ps_q06             How frequently do you delete your browser histor   71
+      ps_q07             Ever ... receive e-mail request personal financi   71
+      ps_q08             Ever ... experience misuse personal information    72
+      ps_q09             Have you ever: ... experienced a computer virus?   72
+      ps_q10             Did the virus(s) result in loss information/dama   73
+      wtpp               Public Use Microdata File - Survey weight of a p   73
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 1
+
+
+      CASEID             Original label pumfid_p
+
+           Data type: numeric
+           Missing-data codes: 99996-99999
+           Record/columns: 1/1-5
+
+      ________________________________________________________________________
+
+      pumfid_p           Public use microdata file identification number
+
+           Literal Question:
+           Public use microdata file identification number
+
+           Data type: numeric
+           Missing-data codes: 99996-99999
+           Record/columns: 1/7-11
+
+      ________________________________________________________________________
+
+      province           Province of respondent
+
+           Literal Question:
+           Province of respondent
+
+           Notes:
+           Information from the Labour Force Survey file (LFS)
+
+           Universe:
+           All respondents
+
+           VALUE  LABEL
+              10  Newfoundland and Labrador
+              11  Prince Edward Island
+              12  Nova Scotia
+              13  New Brunswick
+              24  Quebec
+              35  Ontario
+              46  Manitoba
+              47  Saskatchewan
+              48  Alberta
+              59  British Columbia
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/13-14
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 2
+
+
+      region             Regions of Canada
+
+           Literal Question:
+           Regions of Canada
+
+           Notes:
+           Information derived from the Labour Force Survey file (LFS).
+
+           Universe:
+           All respondents
+
+           VALUE  LABEL
+               1  Atlantic Region
+               2  Quebec
+               3  Ontario
+               4  Manitoba/Saskatchewan
+               5  Alberta
+               6  British Columbia
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/column: 1/16
+
+      ________________________________________________________________________
+
+      g_urbrur           Characteristic of community where the respondent lives
+
+           Literal Question:
+           Characteristic of community where the respondent lives
+
+           VALUE  LABEL
+               1  Montreal
+               2  Toronto
+               3  Vancouver
+               4  Other Urban excluding Prince Edward Island
+               5  Rural excluding Prince Edward Island
+               6  Prince Edward Island
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/column: 1/18
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 3
+
+
+      g_ceduc            Respondent's highest education level
+
+           Literal Question:
+           Respondent’s highest education level
+
+           VALUE  LABEL
+               1  High school or less
+               2  College or some post-secondary
+               3  University certificate or degree
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/20
+
+      ________________________________________________________________________
+
+      g_cstud            Respondent is a student?
+
+           Literal Question:
+           Respondent is a student?
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 4
+
+
+      g_clfsst           Detailed labour force status
+
+           Literal Question:
+           Detailed labour force status
+
+           VALUE  LABEL
+               1  Employed, at work/absent from work
+               2  Unemployed/temporary layoff/job searcher
+               3  Not in the labour force, able to work/permanently unable to
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/24
+
+      ________________________________________________________________________
+
+      gfamtype           Type of household
+
+           VALUE  LABEL
+               1  Single family household with unmarried children under 16
+               2  Single family household without unmarried children under 16
+               3  One person households
+               4  Multi family households
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 5
+
+
+      g_hhsize           Number of persons in household
+
+           Literal Question:
+           Number of persons in household
+
+           VALUE  LABEL
+               1  1 person
+               2  2 persons
+               3  3 persons
+               4  4 or more persons
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/28
+
+      ________________________________________________________________________
+
+      g_heduc            Highest level of education ever completed in the household
+
+           Literal Question:
+           Highest level of education ever completed in the household
+
+           VALUE  LABEL
+               1  High school or less
+               2  College or some post-secondary
+               3  University certificate or degree
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 6
+
+
+      g_hstud            Student in household?
+
+           Literal Question:
+           Student in household?
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/32
+
+      ________________________________________________________________________
+
+      g_hquint           Household income quintile
+
+           Literal Question:
+           Household income quintile
+
+           VALUE  LABEL
+               1  Quintile 1 - <=25 000 $
+               2  Quintile 2 - $25,000 - $45,000
+               3  Quintile 3 - $45,000 - $70,000
+               4  Quintile 4 - $70,000 - $100,000
+               5  Quintile 5 - >=$100,000
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 7
+
+
+      gcagegr6           Age of respondent (6 groups)
+
+           Literal Question:
+           Age of respondent (6 groups)
+
+           VALUE  LABEL
+               1  16 to 24
+               2  25 to 34
+               3  35 to 44
+               4  45 to 54
+               5  55 to 64
+               6  65 and older
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/column: 1/36
+
+      ________________________________________________________________________
+
+      csex               Sex of respondent
+
+           Literal Question:
+           Sex of respondent
+
+           VALUE  LABEL
+               1  Male
+               2  Female
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/38
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 8
+
+
+      cu_q01             Did you use Internet during past 12 months for personal use?
+
+           Pre Question Text:
+           Concept: Did you use Internet during past 12 months for personal use?
+
+           Literal Question:
+           Did you use the Internet during the past 12 months for personal use?
+
+           Universe:
+           All respondents
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                  Page 9
+
+
+      cu_q02             How many years have you used the Internet?
+
+           Pre Question Text:
+           Concept: How many years have you used the Internet?
+
+           Literal Question:
+           How many years have you used the Internet? 1
+
+           Universe:
+           CU_Q01 =
+
+           VALUE  LABEL
+               1  Less than 1 year
+               2  1 to 2 years (1 to less than 2 years)
+               3  2 to 5 years (2 to less than 5 years)
+               4  5 to 10 years (5 to less than 10 years)
+               5  10 or more years
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/42
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 10
+
+
+      cu_q03             How often do you use Internet for personal use in a month?
+
+           Pre Question Text:
+           Concept: How often do you use Internet for personal use in a month?
+
+           Literal Question:
+           How often do you use the Internet for personal use in a typical month?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  At least once a day
+               2  At least once a week (but not every day)
+               3  At least once a month (but not every week)
+               4  Less than once a month
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 11
+
+
+      cu_q04             Weekly average hrs you spend on Internet for personal use?
+
+           Pre Question Text:
+           Concept: Weekly average hrs you spend on Internet for personal use?
+
+           Literal Question:
+           In a typical week, on average, how many hours  do  you  spend  on  the
+           Internet for personal use?
+
+           Universe:
+           Universe: CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Less than 5 hours
+               2  5 to 9 hours (5 to less than 10 hours)
+               3  10 to19 hours (10 to less than 20 hours)
+               4  20 to 29 hours (20 to less than 30 hours)
+               5  30 to 39 hours (30 to less than 40 hours)
+               6  40 or more hours
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/46-47
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 12
+
+
+      cu_q05             Past 12 mnths, use Internet for personal use: ... home?
+
+           Pre Question Text:
+           Concept: Past 12 mnths, use  Internet  for  personal  use:  ...  home?
+           Question Text: During the past 12 months, did you use the Internet for
+           personal use: ... from home? Universe: CU_Q01 = 1
+
+           Literal Question:
+           During the past 12 months, did you use the Internet for personal  use:
+           ... from home?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/49
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 13
+
+
+      cu_q06             Past 12 months, use Internet for personal use: ... work?
+
+           Pre Question Text:
+           Concept: Past 12 months, use Internet for personal use: ... work?
+
+           Literal Question:
+           (During the past 12 months, did you  use  the  Internet  for  personal
+           use:) ... from work?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/51
+
+      ________________________________________________________________________
+
+      cu_g07             Past 12 mths use Internet - personal ...student from school?
+
+           Literal Question:
+           During the past 12 months, did you use the Internet for personal use
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/53
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 14
+
+
+      cu_q08             Past 12 mths use Internet - personal use ... public library?
+
+           Pre Question Text:
+           Concept: Past 12 mths use Internet - personal use ... public library?
+
+           Literal Question:
+           (During the past 12 months, did you  use  the  Internet  for  personal
+           use:) ... from a public library?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 15
+
+
+      cu_q09             Past 12 mths use Internet - personal ... BlackBerry, iPhone?
+
+           Pre Question Text:
+           Concept: Past 12 mths use Internet - personal ... BlackBerry, iPhone?
+
+           Literal Question:
+           (During the past 12 months, did you  use  the  Internet  for  personal
+           use:) ...with a smart phone, tablet or other wireless handheld device?
+           For example, a Blackberry or iPhone.
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 16
+
+
+      cu_q10             Use Internet - from what other locations? friend, relative or hotel
+
+           Pre Question Text:
+           Concept: Use Internet - from what other locations? friend, relative or
+           hotel
+
+           Literal Question:
+           During the past 12 months, did you use the Internet for personal  use:
+           ... from any other locations (such as a friend's or relative's home or
+           hotel)?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/59
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 17
+
+
+      cu_q11a            From what other locations? relative's home
+
+           Pre Question Text:
+           Concept: From what other locations? relative’s home
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months? - Relative's home
+
+           Universe:
+           CU_Q01 = 1 and CU_Q10=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/61
+
+      ________________________________________________________________________
+
+      cu_q11b            What other locations? - Friend's or neighbour home
+
+           Pre Question Text:
+           Concept: What other locations? - Friend’s or neighbour home
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months? - Friend's or neighbour's home
+
+           Universe:
+           CU_Q01 = 1 and CU_Q10=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/63
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 18
+
+
+      cu_q11c            From what other locations? - Government office, department or kiosk
+
+           Pre Question Text:
+           Concept: From what other locations? - Government office, department or
+           kiosk
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months? - Government office, department or kiosk (including  Community
+           Access Program site)
+
+           Universe:
+           CU_Q01 = 1 and CU_Q10=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/65
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 19
+
+
+      cu_q11d            From what other locations? Wifi hotspot, Internet or cyber café
+
+           Pre Question Text:
+           Concept: From what other locations? Wifi hotspot,  Internet  or  cyber
+           café
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months? - Wifi hotspot (including Internet or cyber café, or similar)
+
+           Universe:
+           Universe: CU_Q01 = 1 and CU_Q10=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/67
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 20
+
+
+      cu_q11f            From what other locations? During travel hotel, airport, other office
+
+           Pre Question Text:
+           Concept: From what other  locations?  During  travel  hotel,  airport,
+           other office
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months? - During  travel  (including  hotel,  airport,  other  office)
+           Universe: CU_Q01 = 1 and CU_Q10=1
+
+           Universe:
+           CU_Q01 = 1 and CU_Q10=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/69
+
+      ________________________________________________________________________
+
+      cu_11g             Other locations - you use the Internet ? Other
+
+           Literal Question:
+           From what other locations did you use the Internet during the past  12
+           months?
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/71
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 21
+
+
+      cu_q12a            Reasons you do not use the Internet? - Cost
+
+           Pre Question Text:
+           Concept: Reasons you do not use the Internet? - Cost
+
+           Literal Question:
+           What are the reasons you do not use the Internet? - Cost  (service  or
+           equipment)
+
+           Universe:
+           CU_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/73
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 22
+
+
+      cu_q12b            Reasons you do not use the Internet? - Limited access to a computer
+
+           Pre Question Text:
+           Concept: Reasons you do not use the Internet? - Limited  access  to  a
+           computer
+
+           Literal Question:
+           What are the reasons you do not use the Internet? - Limited access  to
+           a computer
+
+           Universe:
+           CU_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 23
+
+
+      cu_q12c            Reasons  - No need / no interest / not useful / not enough time
+
+           Pre Question Text:
+           Concept: Reasons - No need / no interest / not  useful  /  not  enough
+           time
+
+           Literal Question:
+           What are the reasons you do not use the  Internet?  -  No  need  /  no
+           interest / not useful / not enough time
+
+           Universe:
+           CU_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/77
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 24
+
+
+      cu_q12d            Reasons Lack of skills /training /Internet or computer too difficult
+
+           Pre Question Text:
+           Concept: Reasons Lack of skills /training /Internet  or  computer  too
+           difficult
+
+           Literal Question:
+           What are the reasons you do not use the Internet? - Lack of skills  or
+           training / Internet or computer too difficult to use
+
+           Universe:
+           CU_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/79
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 25
+
+
+      cu_q12h            Reasons- Age /Seniors
+
+           Pre Question Text:
+           Concept: Reasons- Age /Seniors
+
+           Literal Question:
+           What  are  the  reasons  you  do  not  use   the   Internet?   -   Age
+           reasons/Seniors
+
+           Universe:
+           CU_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/81
+
+      ________________________________________________________________________
+
+      cu_12g             Reasons you do not use the Internet? Other
+
+           Literal Question:
+           Reasons you do not use the Internet? Other
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/83
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 26
+
+
+      ec_q01             Past 12 mths, did you order any goods or services over the Internet?
+
+           Literal Question:
+           During the past 12 months, did you order any goods  or  services  over
+           the Internet?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/85
+
+      ________________________________________________________________________
+
+      ec_q02a            Did you order? - Software
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you order? -  Software  (for  example,  video  games,  PC
+           applications)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/87
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 27
+
+
+      ec_q02b            Did you order? - Music
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you order? - Music (for example, CDs, MP3)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/89
+
+      ________________________________________________________________________
+
+      ec_q02c            Did you order? - Books, magazines, online newspapers
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you order? - Books, magazines, online newspapers
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/91
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 28
+
+
+      ec_q02d            Did you order? - Videos or DVDs
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you order? - Videos or DVDs
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/93
+
+      ________________________________________________________________________
+
+      ec_q02e            Did you order? - Memberships or registration fees
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you  order?  -  Memberships  or  registration  fees  (for
+           example, health clubs, tuition, online television subscriptions)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/95
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 29
+
+
+      ec_q02f            Did you order? - Gift certificates or gift cards
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you order? - Gift certificates or gift cards
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/97
+
+      ________________________________________________________________________
+
+      ec_q02g            Did you order? - Tickets for entertainment events
+
+           Literal Question:
+           During the past 12 months, which of the following types  of  goods  or
+           services did you  order?  -  Tickets  for  entertainment  events  (for
+           example, concerts, movies, sports)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/99
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 30
+
+
+      ec_q02h            Did you order? - None of the above
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/101
+
+      ________________________________________________________________________
+
+      ec_q03             Were any products delivered directly to your computer?
+
+           Literal Question:
+           Were any of these products delivered directly to  your  computer  over
+           the Internet rather than physically delivered to your home?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1 and EC_Q02 = (01, 02, 03, 04, 05, 06)
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 31
+
+
+      ec_q04a            Did you order:  computer hardware?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... computer hardware?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/105
+
+      ________________________________________________________________________
+
+      ec_q04b            Did you order: - food or beverages?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... food or beverages? For
+           example, specialty foods or wine, pizza delivery.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/107
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 32
+
+
+      ec_q04c            Did you order: - prescription drugs or products?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... prescription drugs  or
+           products? For example, glasses.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/109
+
+      ________________________________________________________________________
+
+      ec_q04d            Did you order: - other health or beauty products?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... other health or beauty
+           products? For example, vitamins, cosmetics.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/111
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 33
+
+
+      ec_q04e            Did you order: - ... clothing, jewellery or accessories?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... clothing, jewellery or
+           accessories?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/113
+
+      ________________________________________________________________________
+
+      ec_q04f            Did you order: - ... house wares?
+
+           Literal Question:
+           During the past 12 months, did you  order:  -  ...  house  wares?  For
+           example, large appliances, furniture.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/115
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 34
+
+
+      ec_q04g            Did you order: - consumer electronics?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... consumer  electronics?
+           For example, cameras, stereos, TVs, DVD players.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/117
+
+      ________________________________________________________________________
+
+      ec_q04h            Did you order: - ... travel arrangements?
+
+           Literal Question:
+           During the past 12 months, did you order: - ...  travel  arrangements?
+           For example, hotel reservations, travel tickets, rental cars.
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/119
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 35
+
+
+      ec_q04i            Did you order: - ... sports equipment?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... sports equipment?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/121
+
+      ________________________________________________________________________
+
+      ec_q04j            Did you order: - ... toys and games?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... toys and games?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/123
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 36
+
+
+      ec_q04k            Did you order: -  home improvement or gardening supplies?
+
+           Literal Question:
+           During the past 12 months, did you order: - ...  home  improvement  or
+           gardening supplies (including tools)?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/125
+
+      ________________________________________________________________________
+
+      ec_q04l            Did you order: - ... photographic services?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... photographic services?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/127
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 37
+
+
+      ec_q04m            Did  you order: automotive products?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... automotive products?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/129
+
+      ________________________________________________________________________
+
+      ec_q04n            Did you order: flowers?
+
+           Literal Question:
+           During the past 12 months, did you order: - ... flowers?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/131
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 38
+
+
+      ec_q04o            Did you order: - other goods or services? - Specify
+
+           Literal Question:
+           During the past 12 months,  did  you  order:  -  ...  other  goods  or
+           services? - Specify
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/133
+
+      ________________________________________________________________________
+
+      ec_q04p            Did you order: - No other goods or services?
+
+           Literal Question:
+           During the past 12 months, did you order: - No other goods or services
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/135
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 39
+
+
+      ec_q05a            Order goods and services from:  vendors in Canada?
+
+           Literal Question:
+           Did you order goods and services from: - ... vendors in Canada?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/137
+
+      ________________________________________________________________________
+
+      ec_q05b            Order goods and services from: vendors in the United States?
+
+           Literal Question:
+           Did you order goods and services from: - ...  vendors  in  the  United
+           States?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/139
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 40
+
+
+      ec_q05c            Order goods and services from: vendors in other countries
+
+           Literal Question:
+           Did you order  goods  and  services  from:  -  ...  vendors  in  other
+           countries?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/141
+
+      ________________________________________________________________________
+
+      ec_q06             How many separate orders did you place over the Internet?
+
+           Literal Question:
+           During the past 12 months, how many separate orders did you place over
+           the Internet?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+           VALUE  LABEL
+             996  Valid skip
+             997  Don't know
+             998  Refusal
+             999  Not stated
+
+           Data type: numeric
+           Missing-data codes: 996-999
+           Record/columns: 1/143-145
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 41
+
+
+      ec_q08             Past 12 mths esti cost Cdn$ good/service ordered - Internet?
+
+           Pre Question Text:
+           Past 12 mths esti cost Cdn$ good/service ordered - Internet?
+
+           Literal Question:
+           During the past 12 months, what  was  the  estimated  total  cost,  in
+           Canadian dollars, of the goods  and  services  you  ordered  over  the
+           Internet?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 =1
+
+            VALUE  LABEL
+           999996  Valid skip
+           999997  Don't know
+           999998  Refusal
+           999999  Not stated
+
+           Data type: numeric
+           Missing-data codes: 999996-999999
+           Record/columns: 1/147-152
+
+      ________________________________________________________________________
+
+      ec_q10a            Did you pay with  - A credit card online
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over the Internet? - A credit card online
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/154
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 42
+
+
+      ec_q10b            Did you pay with : Debit card
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over the Internet? - Debit card or  electronic  bank  transfer
+           online
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/156
+
+      ________________________________________________________________________
+
+      ec_q10c            Did you pay with - Online payment service
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over the Internet? - Online payment service such as Paypal  or
+           Google Checkout
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/158
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 43
+
+
+      ec_q10d            Did you pay with - Prepaid gift card or online voucher
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over the Internet? - Prepaid gift card or online voucher
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/160
+
+      ________________________________________________________________________
+
+      ec_q10e            Did you pay with - Points from rewards programs
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over  the  Internet?  -  Points  from  rewards  or  redemption
+           programs (for example, Air Miles)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/162
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 44
+
+
+      ec_q10f            Payment not made on the Internet
+
+           Literal Question:
+           During the past 12 months, how did you pay for these goods or services
+           ordered over the Internet? - Payment not made  on  the  Internet  (for
+           example, telephone, mail, COD)
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/164
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 45
+
+
+      ec_q11             Main reason not order good/service online - last 12 months?
+
+           Literal Question:
+           What was the main reason for not ordering any goods or services online
+           during the last 12 months?
+
+           Universe:
+           CU_Q01 = 1 and EC_Q01 = 2
+
+           VALUE  LABEL
+               1  No interest
+               2  Prefer to shop in person
+               3  Security concerns (about giving credit card details)
+               4  Privacy concerns (about providing personal information)
+               5  Delivery concerns (shipping costs or concerns about returnin
+               6  Availability (products not always available to a Canadian ad
+               7  Do not have a credit card for online transactions
+               8  Speed of Internet connection is too slow
+               9  Other
+              96  Valid skip
+              97  Don't know
+              98  Refusal
+              99  Not stated
+
+           Data type: numeric
+           Missing-data codes: 96-99
+           Record/columns: 1/166-167
+
+      ________________________________________________________________________
+
+      ha_q01             Does your household have access to the Internet at home?
+
+           Literal Question:
+           [Do you/Does your household] have access to the Internet at home?
+
+           Universe:
+           All respondents
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/169
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 46
+
+
+      ha_q02a            Reasons household no access to Internet at home?...No need/interest
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? - No need or no interest
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/171
+
+      ________________________________________________________________________
+
+      ha_q02b            Reasons household not access to Internet at home?... Cost
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? - Cost (service or equipment)
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/173
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 47
+
+
+      ha_q02c            Reason household no access to Internet at home?...Access else
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? - Have access to the Internet elsewhere  (for
+           example, at work, school)
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/175
+
+      ________________________________________________________________________
+
+      ha_q02d            Reason household no access to Internet at home?..Service not meet need
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? - The available service  does  not  meet  our
+           needs
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/177
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 48
+
+
+      ha_q02g            Reason household no access to Internet-home?...Lack confidence/skill
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? - Lack of confidence, knowledge, or skills
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/179
+
+      ________________________________________________________________________
+
+      ha_q02h            Reason household no access to Internet-home? No Internet-ready device
+
+           Literal Question:
+           What are the reasons [you do not/your household does not] have  access
+           to the Internet at home? -  No  Internet-ready  device  (for  example,
+           desktop computer) available in dwelling
+
+           Universe:
+           HA_Q01 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/181
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 49
+
+
+      ha_02g             Reason household no access to Internet at home?...Other
+
+           Literal Question:
+           Reason hhld no access to Internet-home?...Other
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/183
+
+      ________________________________________________________________________
+
+      ha_q03a            Access the Internet at home - desktop computer
+
+           Literal Question:
+           Do [you/members of your household] access the Internet at home using :
+           - ... a desktop computer?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/185
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 50
+
+
+      ha_q03b            Access the Internet at home - laptop computer
+
+           Literal Question:
+           Do [you/members of your household] access the Internet at home using :
+           - ... a laptop computer, including Netbooks?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/187
+
+      ________________________________________________________________________
+
+      ha_q03c            Access Internet at home - video games console
+
+           Literal Question:
+           Do [you/members of your household] access the Internet at home using :
+           - ... a video game console? For example, Xbox Live or PlayStation 3.
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/189
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 51
+
+
+      ha_q03d            Access Internet at home - a Blackberry or iPhone
+
+           Literal Question:
+           Do [you/members of your household] access the Internet at home using :
+           - ... a smart phone, tablet or other  wireless  handheld  device?  For
+           example, a Blackberry or iPhone.
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/191
+
+      ________________________________________________________________________
+
+      ha_q03e            Access Internet at home - other device
+
+           Literal Question:
+           Do [you/members of your household] access the Internet at home using :
+           - ... any other device - specify
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/193
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 52
+
+
+      ha_q04a            Connected to the Internet at home -telephone line
+
+           Literal Question:
+           Is your household currently connected to the Internet at  home  by:  -
+           ... telephone line?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/195
+
+      ________________________________________________________________________
+
+      ha_q04b            Connected to the Internet at home  -  cable line
+
+           Literal Question:
+           Is your household currently connected to the Internet at  home  by:  -
+           ... cable line?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/197
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 53
+
+
+      ha_q04c            Connected to the Internet at home -  satellite dish
+
+           Literal Question:
+           Is your household currently connected to the Internet at  home  by:  -
+           ... satellite dish?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/199
+
+      ________________________________________________________________________
+
+      ha_q04d            Connected to the Internet at home - a wireless device
+
+           Literal Question:
+           Is your household currently connected to the Internet at  home  by:  -
+           ... a wireless device including  handheld  devices,  sticks  or  fixed
+           wireless?
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/201
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 54
+
+
+      ha_q04e            Connected to the Internet at home  - other connection specify
+
+           Literal Question:
+           Is your household currently connected to the Internet at  home  by:  -
+           ... any other connection - specify
+
+           Universe:
+           HA_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/203
+
+      ________________________________________________________________________
+
+      ha_q05a            Wireless connection -  Blackberry, iPhone
+
+           Literal Question:
+           You mentioned a wireless connection. Excluding  wireless  routers,  is
+           your household currently connected to the Internet at home by:  -  ...
+           mobile Internet service for a smart phone, tablet  or  other  wireless
+           handheld device? For example, a Blackberry or iPhone.
+
+           Universe:
+           HA_Q01 = 1 and HA_Q04 = 4
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/205
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 55
+
+
+      ha_q05b            Wireless connection - wireless stick/card
+
+           Literal Question:
+           You mentioned a wireless connection. Excluding  wireless  routers,  is
+           your household currently connected to the Internet at home by:  -  ...
+           wireless stick or card? For  example,  data  or  mobile  access  stick
+           connected to a laptop USB port.
+
+           Universe:
+           HA_Q01 = 1 and HA_Q04 = 4
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/207
+
+      ________________________________________________________________________
+
+      ha_q05c            Wireless connection - wireless/ Point-to-Point
+
+           Literal Question:
+           You mentioned a wireless connection. Excluding  wireless  routers,  is
+           your household currently connected to the Internet at home by:  -  ...
+           fixed wireless or Point-to-Point? For example, requiring line of sight
+           reception.
+
+           Universe:
+           HA_Q01 = 1 and HA_Q04 = 4
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/209
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 56
+
+
+      ha_q05d            Wireless connection - other wireless connection
+
+           Literal Question:
+           You mentioned a wireless connection. Excluding  wireless  routers,  is
+           your household currently connected to the Internet at home by:  -  ...
+           any other wireless connection? - specify
+
+           Universe:
+           HA_Q01 = 1 and HA_Q04 = 4
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/211
+
+      ________________________________________________________________________
+
+      ha_q06             Household access Internet home using high speed connection?
+
+           Literal Question:
+           [Do you/Does your household] access the Internet at home using a  high
+           speed connection?
+
+           Universe:
+           HA_Q01 = 1 and HA_Q04 = (1 and <> 2, 3, 4 or 5)
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/213
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 57
+
+
+      ha_q09             Is there high speed Internet service available in your area?
+
+           Literal Question:
+           Is there a high speed Internet service available in your area?
+
+           Universe:
+           HA_Q01 = 2 and HA_Q06 = 2
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/215
+
+      ________________________________________________________________________
+
+      su_q01             For e-mail?
+
+           Literal Question:
+           During the past 12 months, have you used the Internet: ... for e-mail?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/217
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 58
+
+
+      su_q02             An instant messenger?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to use an
+           instant  messenger?  For  example,  Windows  Live   Messenger,   Yahoo
+           Messenger.
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/219
+
+      ________________________________________________________________________
+
+      su_q03             To visit or interact with government websites?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to  visit
+           or interact with government websites?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/221
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 59
+
+
+      su_q04             To search for medica/ health-related information?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to search
+           for medical or health-related information?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/223
+
+      ________________________________________________________________________
+
+      su_q05             For formal education, training or school work?
+
+           Literal Question:
+           (During the past 12 months, have  you  used  the  Internet:)  ...  for
+           formal education, training or school work?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/225
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 60
+
+
+      su_q06             For travel information or making travel arrangements?
+
+           Literal Question:
+           During the past 12 months, have you used the Internet: ... for  travel
+           information or making travel arrangements?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/227
+
+      ________________________________________________________________________
+
+      su_q07             To search for employment?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to search
+           for employment?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/229
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 61
+
+
+      su_q08             For electronic banking?
+
+           Literal Question:
+           (During the past 12 months, have  you  used  the  Internet:)  ...  for
+           electronic banking? For example,  paying  bills,  viewing  statements,
+           transferring funds between accounts.
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/231
+
+      ________________________________________________________________________
+
+      su_q09             To research investments?
+
+           Literal Question:
+           (During the past 12 months,  have  you  used  the  Internet:)  ...  to
+           research investments?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/233
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 62
+
+
+      su_q10             To read or watch the news?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ...  to  read
+           or watch the news?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/235
+
+      ________________________________________________________________________
+
+      su_q11             To research community events?
+
+           Literal Question:
+           During the past 12 months, have you used the Internet: ... to research
+           community events?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/237
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 63
+
+
+      su_q12             Window shop - browse for information on goods or services?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to window
+           shop or browse for information on goods or services?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/239
+
+      ________________________________________________________________________
+
+      su_q13             To sell goods or services? - through auction sites.
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ...  to  sell
+           goods or services? For example, through auction sites.
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/241
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 64
+
+
+      su_q14             Use social networking sites? - Facebook, Twitter.
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:)  ...  to  use
+           social networking sites? For example, Facebook, Twitter.
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/243
+
+      ________________________________________________________________________
+
+      su_q15             To contribute content or participate in discussion groups?
+
+           Literal Question:
+           (During the past 12 months,  have  you  used  the  Internet:)  ...  to
+           contribute content or participate in discussion groups?  For  example,
+           blogging, message boards, posting images or videos.
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/245
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 65
+
+
+      su_q16             To play online gamies?
+
+           Literal Question:
+           During the past 12 months, have you used the  Internet:  ...  to  play
+           online games?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/247
+
+      ________________________________________________________________________
+
+      su_q17             To obtain or save music - free or paid dowloads?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to obtain
+           or save music (free or paid downloads)?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/249
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 66
+
+
+      su_q18             To obtain or save software - free or paid downloads?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to obtain
+           or save software (free or paid downloads)?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/251
+
+      ________________________________________________________________________
+
+      su_q19             To listen to the radio online?
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ... to listen
+           to the radio online?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/253
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 67
+
+
+      su_q20             To download or watch TV online?
+
+           Literal Question:
+           (During the past 12 months,  have  you  used  the  Internet:)  ...  to
+           download or watch TV online?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/255
+
+      ________________________________________________________________________
+
+      su_q21             To download or watch movies or video clips online?
+
+           Literal Question:
+           During the past 12 months, have you used the Internet: ... to download
+           or watch movies or video clips online?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/257
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 68
+
+
+      su_q22             To make telephone or video calls online?- Skype, FaceTime.
+
+           Literal Question:
+           (During the past 12 months, have you used the Internet:) ...  to  make
+           telephone or video calls online? For example, Skype, FaceTime.
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/259
+
+      ________________________________________________________________________
+
+      ps_q01             Concerned - conducting banking transactions over the Internet
+
+           Literal Question:
+           How concerned ˆAREYOU01 about conducting banking transactions over the
+           Internet?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Not at all concerned
+               2  Concerned
+               3  Very concerned
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/261
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 69
+
+
+      ps_q02             Concerned - using credit card over the Internet
+
+           Literal Question:
+           How  concerned  ˆAREYOU02  about  using  your  credit  card  over  the
+           Internet?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Not at all concerned
+               2  Concerned
+               3  Very concerned
+               4  I do not have a credit card
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/263
+
+      ________________________________________________________________________
+
+      ps_q03             Security sftwre -protect computer/devices - access Internet?
+
+           Literal Question:
+           Do you currently use any security software to protect your computer or
+           other devices you use to access the Internet?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/265
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 70
+
+
+      ps_q04             Currently use free versions of Internet security software?
+
+           Literal Question:
+           Do you currently use any free versions of Internet security software?
+
+           Universe:
+           CU_Q01 = 1 and PS_Q03 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/267
+
+      ________________________________________________________________________
+
+      ps_q05             How often back up files (document, spreadsheets/pics) elec?
+
+           Literal Question:
+           How often do you back up files electronically (for example, documents,
+           spreadsheets or pictures)?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Always or almost always
+               2  Occasionally
+               3  Never
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/269
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 71
+
+
+      ps_q06             How frequently do you delete your browser history?
+
+           Literal Question:
+           How frequently do you delete your browser history?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  After each use
+               2  Occasionally
+               3  Never
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/271
+
+      ________________________________________________________________________
+
+      ps_q07             Ever ... receive e-mail request personal financial info?
+
+           Literal Question:
+           Have you ever:  ...  received  emails  requesting  personal  financial
+           information (such  as  bank  account  numbers  or  passwords)  from  a
+           fraudulent source?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/273
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 72
+
+
+      ps_q08             Ever ... experience misuse personal information on Internet?
+
+           Literal Question:
+           Have you ever: ... experienced misuse of personal information  on  the
+           Internet (for example, misuse of pictures,  videos  or  personal  data
+           uploaded on public websites)?
+
+           Universe:
+           CU_Q01 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/275
+
+      ________________________________________________________________________
+
+      ps_q09             Have you ever: ... experienced a computer virus?
+
+           Literal Question:
+           Have you ever: ... had a computer virus?
+
+           Universe:
+           CU_Q01=1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/277
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017
+
+
+
+      Canadian Internet Use Survey, 2012 - Person File                 Page 73
+
+
+      ps_q10             Did the virus(s) result in loss information/damage software?
+
+           Literal Question:
+           Did the virus (or viruses) result in the loss of information or damage
+           to software?
+
+           Universe:
+           CU_Q01 = 1 and PS_Q09 = 1
+
+           VALUE  LABEL
+               1  Yes
+               2  No
+               6  Valid skip
+               7  Don't know
+               8  Refusal
+               9  Not stated
+
+           Data type: numeric
+           Missing-data codes: 6-9
+           Record/column: 1/279
+
+      ________________________________________________________________________
+
+      wtpp               Public Use Microdata File - Survey weight of a person, i.e. the number
+
+           Literal Question:
+           Public Use Microdata File - Survey weight of a person, i.e. the number
+
+           Data type: numeric
+           Decimals: 4
+           Missing-data codes: 9999999.9996-9999999.9999
+           Record/columns: 1/281-290
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  January 16, 2017

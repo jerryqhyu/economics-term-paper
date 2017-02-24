@@ -1,0 +1,9 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'bellspaper.blg'
+[42] biber-darwin:302> INFO - === Fri Jan 27, 2017, 01:05:48
+[63] Biber.pm:359> INFO - Reading 'bellspaper.bcf'
+[185] Biber.pm:823> INFO - Found 0 citekeys in bib section 0
+[194] Utils.pm:164> WARN - The file 'bellspaper.bcf' does not contain any citations!
+[202] bbl.pm:597> INFO - Writing 'bellspaper.bbl' with encoding 'UTF-8'
+[202] bbl.pm:701> INFO - Output to bellspaper.bbl
+[202] Biber.pm:109> INFO - WARNINGS: 1

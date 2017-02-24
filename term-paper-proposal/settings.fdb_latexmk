@@ -1,0 +1,9 @@
+# Fdb version 3
+["pdflatex"] 1485500368 "settings.tex" "settings.pdf" "settings" 1485500369
+  "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1474771991 1245962 b035aac1a55fa6c60daf632f2e20a5db ""
+  "settings.aux" 1485495247 8 a94a2480d3289e625eea47cd1b285758 ""
+  "settings.tex" 1485500368 4446 339af08af6268b7cc615b11fe08ffd7a ""
+  (generated)
+  "settings.pdf"
+  "settings.log"

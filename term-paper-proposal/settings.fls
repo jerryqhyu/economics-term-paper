@@ -1,0 +1,5 @@
+PWD /Users/qhyu/Downloads/term-paper-proposal
+INPUT /usr/local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt
+INPUT ./settings.tex
+OUTPUT settings.log
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
