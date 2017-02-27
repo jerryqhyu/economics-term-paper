@@ -35,57 +35,25 @@ replace numord = 0 if ec_q01 == 2
 drop ec_q01 cu_q01
 
 //drop nonrespondants
-drop if (sc1==9 & sc2==9 & sc3==9)
-drop if (sc1==4 & sc2==9 & sc3==9)
+drop if (sc1==9 | sc2==9 | sc3==9)
 drop if (sc1 == 8 | sc2 == 8 | sc3 == 8)
 
 //if no credit card, set to not concerned
 replace sc1 = 1 if sc1 == 4 | sc1 == 7
 replace sc1 = sc1 - 1
 //not concerned if no opinion
-replace sc2 = 2 if sc2 == 7 | sc2 == 9
-replace sc2 = 0 if sc2 == 2
+replace sc2 = 0 if sc2 == 7 | sc2 == 9 | sc2 == 2
 //not concerned if experienced no virus
-replace sc3 = 2 if sc3 == 6 | sc3 == 7 | sc3 == 9
-replace sc3 = 0 if sc3 == 2
+replace sc3 = 0 if sc3 == 6 | sc3 == 7 | sc3 == 9 | sc3 == 2
 //no access if respondant does not know
-replace homea = 2 if homea == 8 | homea == 9
-replace homea = 0 if homea == 2
+replace homea = 0 if homea == 8 | homea == 9 | homea == 2
 
-//set categorical variable to the mean of the categories
-replace income = 18317.5 if income == 1
-replace income = 35000 if income == 2
-replace income = 57500 if income == 3
-replace income = 85000 if income == 4
-replace income = 100000 if income == 5
-
-replace age = 20 if age == 1
-replace age = 29.5 if age == 2
-replace age = 39.5 if age == 3
-replace age = 49.5 if age == 4
-replace age = 59.5 if age == 5
-replace age = 65 if age == 6
-
-replace hour = 2.5 if hour == 1
-replace hour = 7 if hour == 2
-replace hour = 14.5 if hour == 3
-replace hour = 24.5 if hour == 4
-replace hour = 34.5 if hour == 5
-replace hour = 40 if hour == 6
-
-replace year = 0.5 if year == 1
-replace year = 1.5 if year == 2
-replace year = 3.5 if year == 3
-replace year = 7.5 if year == 4
-replace year = 10 if year == 5
-
-//replace the rest of nonrespondants with the average value
-egen missingyear = mean(year),by()
-replace year = missingyear if year == 7 | year == 8
-egen missinghour = mean(hour), by()
-replace hours = missinghour if hours == 97 | hours == 98
-drop missinghour
-drop missingyear
+tabulate income, generate(incomeD)
+tabulate age, generate(ageD)
+tabulate hour, generate(hourD)
+tabulate year, generate(yearD)
+drop hourD7 hourD8 yearD6 yearD7
+drop if numord > 365
 
 //set to binary, 0 is male
 replace gender = gender - 1
