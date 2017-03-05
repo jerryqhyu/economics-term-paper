@@ -3,6 +3,8 @@ import numpy as np
 from sklearn.neural_network import MLPRegressor, MLPClassifier
 from sklearn import ensemble
 from sklearn import neighbors
+from sklearn import tree
+from sklearn import neighbors
 from sklearn.svm import SVR
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
@@ -46,34 +48,32 @@ if __name__ == '__main__':
     print(data.shape)
     print(labels.shape)
 
-    preclf = linear_model.LinearRegression()
+    #preclf = linear_model.LinearRegression()
 
     clf = MLPRegressor(
-        hidden_layer_sizes=(32, 32,), activation='identity', solver='sgd', alpha=0, batch_size=100, learning_rate='adaptive', learning_rate_init=1e-10, max_iter=50000, shuffle=True, random_state=None, tol=-1, verbose=True, warm_start=True, momentum=0.99, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08
+        hidden_layer_sizes=(32, 32,), activation='identity', solver='sgd', alpha=0, batch_size=50, learning_rate='adaptive', learning_rate_init=1e-11, max_iter=50000, shuffle=True, random_state=None, tol=-10, verbose=True, warm_start=True, momentum=0.99, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08
     )
 
     #clf = SVR(verbose=True)
 
     #clf = linear_model.Lasso(alpha = 0.1)
 
-    #clf = ExtraTreesClassifier(n_estimators=128, verbose=1)
+    #clf = ensemble.ExtraTreesClassifier(n_estimators=8, verbose=1)
+
+    #clf = tree.DecisionTreeClassifier(criterion='entropy', max_depth=16)
+
+    #clf = neighbors.KNeighborsClassifier(n_neighbors=128)
 
     #clf = neighbors.KNeighborsRegressor()
 
     print("-----Training-----")
     try:
-        preclf.fit(data, labels)
-        interm = preclf.predict(data)
-        b = []
-        for i in interm:
-            b.append([i])
-        b = np.asarray(b, dtype=np.float64)
-        clf.fit(b, labels)
+        clf.fit(data, labels)
     except KeyboardInterrupt:
         pass
 
     print("-----Predicting-----")
-    pred = clf.predict(b)
+    pred = clf.predict(data)
     print(pred)
     print(labels)
-    print ('Accuracy:', clf.score(b, labels))
+    print ('Accuracy:', clf.score(data, labels))
