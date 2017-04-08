@@ -1,7 +1,7 @@
 //import entire survey dataset
 //and drop variables not relevant to our study
 import delimited ./data/data.csv
-drop caseid pumfid_p province region g_cstud g_clfsst gfamtype g_hhsize g_heduc g_hstud cu_q03 cu_q05 cu_q06 cu_g07 cu_q08 cu_q09 cu_q10 cu_q11a cu_q11b cu_q11c cu_q11d cu_q11f cu_11g cu_q12a cu_q12b cu_q12c cu_q12d cu_q12h cu_12g ec_q02a ec_q02b ec_q02c ec_q02d ec_q02e ec_q02f ec_q02g ec_q02h ec_q03 ec_q04a ec_q04b ec_q04c ec_q04d ec_q04e ec_q04f ec_q04g ec_q04h ec_q04i ec_q04j ec_q04k ec_q04l ec_q04m ec_q04n ec_q04o ec_q04p ec_q05a ec_q05b ec_q05c ec_q08 ec_q10a ec_q10b ec_q10c ec_q10d ec_q10e ec_q10f ec_q11 ha_q02a ha_q02b ha_q02c ha_q02d ha_q02g ha_q02h ha_02g ha_q03a ha_q03b ha_q03c ha_q03d ha_q03e ha_q04a ha_q04b ha_q04c ha_q04d ha_q04e ha_q05a ha_q05b ha_q05c ha_q05d ha_q06 ha_q09 su* ps_q01 ps_q03 ps_q04 ps_q05 ps_q06 ps_q07 ps_q09
+drop caseid pumfid_p province region g_cstud gfamtype g_heduc g_hstud cu_q03 cu_q05 cu_q06 cu_g07 cu_q08 cu_q09 cu_q10 cu_q11a cu_q11b cu_q11c cu_q11d cu_q11f cu_11g cu_q12a cu_q12b cu_q12c cu_q12d cu_q12h cu_12g ec_q02a ec_q02b ec_q02c ec_q02d ec_q02e ec_q02f ec_q02g ec_q02h ec_q03 ec_q04a ec_q04b ec_q04c ec_q04d ec_q04e ec_q04f ec_q04g ec_q04h ec_q04i ec_q04j ec_q04k ec_q04l ec_q04m ec_q04n ec_q04o ec_q04p ec_q05a ec_q05b ec_q05c ec_q08 ec_q10a ec_q10b ec_q10c ec_q10d ec_q10e ec_q10f ec_q11 ha_q02a ha_q02b ha_q02c ha_q02d ha_q02g ha_q02h ha_02g ha_q03a ha_q03b ha_q03c ha_q03d ha_q03e ha_q04a ha_q04b ha_q04c ha_q04d ha_q04e ha_q05a ha_q05b ha_q05c ha_q05d ha_q06 ha_q09 su*
 
 //rename to appropriate name
 rename wtpp weight
@@ -19,6 +19,11 @@ rename g_hquint income
 rename ps_q02 sc1
 rename ps_q08 sc2
 rename ps_q10 sc3
+rename g_hhsize hhsize
+rename ps_q01 cbanking
+rename ps_q05 bkup
+rename ps_q06 clhist
+rename ps_q07 info
 
 //generate dummy variables
 //if the respondant is of urban origin
@@ -34,11 +39,36 @@ replace univ = 0 if educ != 3
 drop if isuser != 1
 replace numord = 0 if isshopper == 2
 
+generate iv1 = 0
+generate iv2 = 0
+generate employed = 0
+generate bsoft = 0
+replace iv1 = 1 if ps_q03 == 1
+replace iv2 = 1 if ps_q04 == 2
+replace employed = 1 if g_clfsst == 1
+
+drop if cbanking > 5
+drop if bkup > 5
+drop if clhist > 5
+drop if info > 5
+
+replace cbanking = 1 if cbanking > 3
+replace cbanking = cbanking - 1
+replace bsoft = 1 if ps_q04 == 2
+replace bkup = 1 if bkup < 3
+replace bkup = 0 if bkup > 2
+replace clhist = 1 if clhist < 3
+replace clhist = 0 if clhist > 2
+replace info = 0 if info > 1
+
 //no longer useful variables
 drop isuser
 drop isshopper
 drop urbanstatus
 drop educ
+drop ps_q03
+drop ps_q04
+rename gender female
 
 //drop nonrespondants
 drop if (sc1==9 | sc2==9 | sc3==9)
@@ -67,4 +97,4 @@ drop if (yearD1 == 0 & yearD2 == 0 & yearD3 == 0 & yearD4 == 0 & yearD5 == 0)
 drop if (ageD1 == 0 & ageD2 == 0 & ageD3 == 0 & ageD4 == 0 & ageD5 == 0 & ageD6 == 0)
 
 //set to binary, 0 is male
-replace gender = gender - 1
+replace female = female - 1

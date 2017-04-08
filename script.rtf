@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww37400\viewh21840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs72 \cf0 What do we make of this strange result? We asked ourselves, what are some of the possible reasons for this absurdity?\
+\
+First off there is endogeneity. If a variable is related to the error term we will get a biased estimator. There are some sources: we might have omitted some important variables related to the x, such as average quality of shopping websites. Some of these variables cannot be measured, like the quality of previous online-shopping experience. A bad experience or a failed transaction could easily turn away some customers from returning.\
+\
+Preferences of an individual could also play a part, maybe someone just likes to shop offline, and we don't capture such variation. \
+\
+There could also be measurement error as some respondents do not enter the correct information. When we were processing the data, we actually caught a few samples where the person was placing over 900 orders per year. Such observations are not representative and will cause bias in our model.\
+\
+Simultaneity could also be at play, it could be argued that number of order and sc1, sc2, sc3 affect each other, also numord and hours affect each other as well.\
+\
+We spent 2 minutes talking about endogeneity, but more issues lie deep, to find them, we have to look at OLS assumptions. We will talk about number 1 and 5 next.\
+\
+First, assumption 1, if I had to guess the model is not linear at all. The R2 is terrible, which means the best line we fit is not much better than a zero. There could be functional form misspecification. For example, what if just catching a virus or just being concerned about personal information wouldn't change your behaviour, but a combination of the two will have a drastic effect? We tested this by combining variable of interest, including sc1sc2, sc2sc3, sc1sc3 and sc1sc2sc3. If they are irrelevant, we should be seeing 0 for the gammas. But! That's not what we see at all. In fact, each of the gammas are significant at the 10% level, and they are jointly significant at the 5% level. This means that our model is not complex enough to capture the variation in numord. In further regressions we would be adding these interaction variables for a more meaningful run.\
+\
+Next we have homoskedasticity. Most often the error term is not homoskedastic, but we have to test it. In this case we are using a Breusch Pagan test, it is not as powerful as the White test, but it gets the job done in our case. It predicts the sample variance with the regressors, if the regressors can in any way significantly predict the variance, we can conclude that it is not homoskedastic. After running the test, we get a P-value of 0. This means we reject homoskedasticity.\
+\
+In conclusion, we have established a preliminary model that could partially explain an individual's online purchases. The model produces very surprising results, and we found there are many flaws to it. Going forward, we are going to use robust errors for significance tests, and if we can find out a good way to do generalized least squares, we will attempt that. We will also fix outliers and drop all the responses that do not make sense. We will also investigate different and possibly impactful functional forms and interaction effects. Hopefully after all that we could find a powerful model to answer the question we introduced in the beginning.}

@@ -1,12 +1,14 @@
 import csv
 import numpy as np
-from sknn.mlp import Regressor
-from sknn.mlp import Layer
+from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 
 def process_data(infile):
     labels = []
     data = []
+    capacity = {}
+    for i in range(366):
+        capacity[i] = 0
     with open(infile, newline='') as datafile:
         reader = csv.reader(datafile, delimiter=',')
         for row in reader:
@@ -24,32 +26,36 @@ def process_data(infile):
             row[11] = float(eval(row[11]))
             row[12] = float(eval(row[12]))
             row[13] = float(eval(row[13]))
+            row[14] = float(eval(row[14]))
+            row[15] = float(eval(row[15]))
+            row[16] = float(eval(row[16]))
+            row[17] = float(eval(row[17]))
+            row[18] = float(eval(row[18]))
+            row[19] = float(eval(row[19]))
+            row[20] = float(eval(row[20]))
+            row[21] = float(eval(row[21]))
+            row[22] = float(eval(row[22]))
+            row[23] = float(eval(row[23]))
+            row[24] = float(eval(row[24]))
+            row[25] = float(eval(row[25]))
+            row[26] = float(eval(row[26]))
+            row[27] = float(eval(row[27]))
+            row[28] = float(eval(row[28]))
 
-            labels.append(row[0])
-            data.append(row[1:])
+            if row[0] != 0 and capacity[row[0]] < 200:
+                labels.append(row[0])
+                data.append(row[1:])
+                capacity[row[0]] += 1
     return data, labels
 
 if __name__ == '__main__':
     data, labels = process_data("./data/processed.csv")
     data = np.asarray(data, dtype=np.float64)
     labels = np.asarray(labels, dtype=np.float64)
-    print(data.shape)
+    print(data)
     print(labels.shape)
 
-    layers = [Layer(type='Rectifier', units=30),
-     Layer(type='Rectifier', units=64),
-     Layer(type='Rectifier', units=128),
-     Layer(type='Rectifier', units=64),
-     Layer(type='Rectifier', units=1)]
-
-    clf = Regressor(
-        layers,
-        learning_rule='rmsprop',
-        learning_rate=1e-5,
-        learning_momentum=0.9,
-        batch_size=100,
-        verbose=True
-    )
+    clf = DecisionTreeRegressor(max_depth=10)
 
 
     print("-----Training-----")
@@ -60,6 +66,6 @@ if __name__ == '__main__':
 
     print("-----Predicting-----")
     pred = clf.predict(data)
-    print(pred)
     print(labels)
+    print(pred)
     print ('R2:', r2_score(labels, pred))
